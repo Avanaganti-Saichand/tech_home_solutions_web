@@ -115,7 +115,7 @@ export default function Contact() {
               <span className="font-bold">Phone:</span>{" "}
               <a
                 href="tel:+917396507394"
-                className="underline hover:text-white transition"
+                className="underline hover:text-[#F4A300] transition"
               >
                 +91 7396507394
               </a>
@@ -125,7 +125,7 @@ export default function Contact() {
               <span className="font-bold">Email:</span>{" "}
               <a
                 href="mailto:techhomehyd@gmail.com"
-                className="underline hover:text-white transition"
+                className="underline hover:text-[#F4A300] transition"
               >
                 techhomehyd@gmail.com
               </a>
