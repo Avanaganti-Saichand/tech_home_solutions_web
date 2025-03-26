@@ -8,6 +8,7 @@ import { useEffect } from "react";
 
 // ⬇️ NEW: Toast Setup
 import { Toaster } from "react-hot-toast";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 export default function App({ Component, pageProps }: AppProps) {
   useEffect(() => {
@@ -21,6 +22,7 @@ export default function App({ Component, pageProps }: AppProps) {
     <>
       <Toaster position="top-center" reverseOrder={false} />
       <Component {...pageProps} />
+      <SpeedInsights />
     </>
   );
 }
