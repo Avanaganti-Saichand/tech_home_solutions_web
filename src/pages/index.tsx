@@ -29,6 +29,26 @@ export default function Home() {
         <meta property="og:image" content="/logo.jpg" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/logo1.ico" />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              name: "Tech Home Electric Solutions",
+              url: "https://techhomeelectric.in",
+              logo: "https://techhomeelectric.in/logo.jpg",
+              address: {
+                "@type": "PostalAddress",
+                streetAddress: "4-233, Chengicherla, Medipally",
+                addressLocality: "Telangana",
+                postalCode: "500092",
+                addressCountry: "IN",
+              },
+              telephone: "+91 7396507394",
+            }),
+          }}
+        />
       </Head>
 
       <main className="min-h-screen overflow-x-hidden">
