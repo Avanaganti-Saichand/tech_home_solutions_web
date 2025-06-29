@@ -15,6 +15,17 @@ export default function Home() {
           name="description"
           content="Powering Control, Automation and Smart Living"
         />
+        <meta
+          name="keywords"
+          content="Tech Home Electric Solutions, electrical panels, home automation, MCC, PCC"
+        />
+        <link rel="canonical" href="https://techhomeelectric.in/" />
+        <meta property="og:title" content="Tech Home Electric Solutions" />
+        <meta
+          property="og:description"
+          content="Powering Control, Automation and Smart Living"
+        />
+        <meta property="og:image" content="/logo.jpg" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/logo1.ico" />
         <script
