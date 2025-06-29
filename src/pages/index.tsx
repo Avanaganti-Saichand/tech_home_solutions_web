@@ -21,6 +21,7 @@ export default function Home() {
         />
         <link rel="canonical" href="https://techhomeelectric.in/" />
         <meta property="og:title" content="Tech Home Electric Solutions" />
+        <meta property="og:url" content="https://techhomeelectric.in/" />
         <meta
           property="og:description"
           content="Powering Control, Automation and Smart Living"
