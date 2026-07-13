@@ -26,6 +26,9 @@ export default function Hero() {
             Control.
             <br />
             <span className="text-amber">Automation.</span>
+            <span className="sr-only">
+              — Electrical panel manufacturers in Hyderabad: PCC, MCC, distribution panels, gensets, home automation and building management systems.
+            </span>
           </h1>
           <p className="mt-6 max-w-md text-lg leading-relaxed text-paper/70">
             Custom electrical panels, gensets, and smart building systems —
