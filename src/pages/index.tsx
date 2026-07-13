@@ -1,8 +1,11 @@
 import Head from "next/head";
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
-import About from "../components/About";
-import Products from "../components/Products";
+import TrustBar from "../components/TrustBar";
+import Services from "../components/Services";
+import Process from "../components/Process";
+import WhyUs from "../components/WhyUs";
+import StickyCall from "../components/StickyCall";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 
@@ -46,6 +49,10 @@ export default function Home() {
                 addressCountry: "IN",
               },
               telephone: "+91 7396507394",
+              sameAs: [
+                "https://www.instagram.com/techhomeelectric",
+                "https://www.facebook.com/share/14q6z5N8mb/",
+              ],
             }),
           }}
         />
@@ -54,10 +61,13 @@ export default function Home() {
       <main className="min-h-screen overflow-x-hidden">
         <Navbar />
         <Hero />
-        <About />
-        <Products />
+        <TrustBar />
+        <Services />
+        <Process />
+        <WhyUs />
         <Contact />
         <Footer />
+        <StickyCall />
       </main>
     </>
   );

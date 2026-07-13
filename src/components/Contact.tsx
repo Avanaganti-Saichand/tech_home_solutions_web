@@ -90,104 +90,111 @@ export default function Contact() {
   };
 
   return (
-    <section
-      id="contact"
-      className="bg-gradient-to-l from-[#F4A300] via-white to-[#fffdf5] py-20 px-4 md:px-20 text-black"
-      data-aos="fade-up"
-    >
-      <div className="max-w-6xl mx-auto">
-        {/* Section Title */}
-        <h2 className="text-3xl sm:text-4xl font-extrabold text-center mb-12 relative inline-block">
-          <span className="relative z-10">Contact Us</span>
-          <span className="absolute left-1/2 -translate-x-1/2 bottom-0 w-28 h-2 "></span>
-        </h2>
+    <section id="contact" className="bg-coal py-20">
+      <div className="mx-auto max-w-6xl px-4 md:px-6">
+        <div className="mb-12" data-aos="fade-up">
+          <p className="font-mono text-xs uppercase tracking-[0.25em] text-amber">Get a quote</p>
+          <h2 className="mt-2 font-display text-4xl uppercase tracking-wide text-paper sm:text-5xl">
+            Contact us
+          </h2>
+          <p className="mt-3 max-w-lg text-paper/60">
+            Describe the job — a panel, a genset, a full automation setup — and we&apos;ll get back to you with next steps.
+          </p>
+        </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
-          {/* Contact Info */}
-          <div className="text-left space-y-6 text-lg" data-aos="fade-right">
-            <p>
-              <FontAwesomeIcon icon={faMapMarkerAlt} className="mr-3" />
-              <span className="font-bold">Address:</span> 4-233, Chengicherla,
-              Medipally, Telangana, 500092
-            </p>
-            <p>
-              <FontAwesomeIcon icon={faPhone} className="mr-3" />
-              <span className="font-bold">Phone:</span>{" "}
-              <a
-                href="tel:+917396507394"
-                className="underline hover:text-[#F4A300] transition"
-              >
-                +91 7396507394
-              </a>
-            </p>
-            <p>
-              <FontAwesomeIcon icon={faEnvelope} className="mr-3" />
-              <span className="font-bold">Email:</span>{" "}
-              <a
-                href="mailto:techhomehyd@gmail.com"
-                className="underline hover:text-[#F4A300] transition"
-              >
-                techhomehyd@gmail.com
-              </a>
-            </p>
-
-            <div className="pt-4">
+        <div className="grid items-start gap-10 md:grid-cols-[0.9fr_1.1fr]">
+          {/* info */}
+          <div className="space-y-5" data-aos="fade-up">
+            <div className="border border-line bg-coal-soft p-6">
+              <p className="flex items-start gap-3 text-paper/80">
+                <FontAwesomeIcon icon={faMapMarkerAlt} className="mt-1 h-4 w-4 text-amber" />
+                <span>4-233, Chengicherla, Medipally,<br />Telangana 500092</span>
+              </p>
+              <p className="mt-4 flex items-center gap-3 text-paper/80">
+                <FontAwesomeIcon icon={faPhone} className="h-4 w-4 text-amber" />
+                <a href="tel:+917396507394" className="hover:text-amber">+91 73965 07394</a>
+              </p>
+              <p className="mt-4 flex items-center gap-3 text-paper/80">
+                <FontAwesomeIcon icon={faEnvelope} className="h-4 w-4 text-amber" />
+                <a href="mailto:techhomehyd@gmail.com" className="hover:text-amber">techhomehyd@gmail.com</a>
+              </p>
               <a
                 href="https://wa.me/917396507394"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center bg-black text-white font-semibold px-6 py-3 rounded-full shadow-lg hover:bg-white hover:text-black transition-all duration-300"
+                className="mt-6 inline-flex items-center gap-2.5 bg-[#25D366] px-5 py-3 font-display text-sm uppercase tracking-wide text-coal transition-opacity hover:opacity-85"
               >
-                <FontAwesomeIcon icon={faWhatsapp} className="mr-2" />
+                <FontAwesomeIcon icon={faWhatsapp} className="h-4.5 w-4.5" />
                 Chat on WhatsApp
               </a>
             </div>
+            <iframe
+              title="Tech Home Electric Solutions location"
+              src="https://maps.google.com/maps?q=Chengicherla%2C%20Medipally%2C%20Telangana%20500092&z=14&output=embed"
+              className="h-56 w-full border border-line grayscale invert-[0.9] contrast-[0.9]"
+              loading="lazy"
+              referrerPolicy="no-referrer-when-downgrade"
+            />
           </div>
 
-          {/* Contact Form */}
+          {/* form */}
           <form
             ref={form}
             onSubmit={sendEmail}
-            className="space-y-4"
-            data-aos="fade-left"
+            className="border border-line bg-coal-soft p-6 md:p-8"
+            data-aos="fade-up"
+            data-aos-delay="100"
           >
-            <h3 className="text-2xl font-bold mb-4">Get in Touch</h3>
-
-            <input
-              type="text"
-              name="name"
-              placeholder="Your Name"
-              required
-              className="w-full p-3 border-2 border-black rounded-md bg-white text-black placeholder-gray-600"
-            />
-            <input
-              type="email"
-              name="email"
-              placeholder="Your Email"
-              required
-              className="w-full p-3 border-2 border-black rounded-md bg-white text-black placeholder-gray-600"
-            />
-            <input
-              type="tel"
-              name="phone"
-              placeholder="Your Phone Number"
-              required
-              className="w-full p-3 border-2 border-black rounded-md bg-white text-black placeholder-gray-600"
-            />
-
-            <textarea
-              name="message"
-              rows={5}
-              placeholder="Your Message"
-              required
-              className="w-full p-3 border-2 border-black rounded-md bg-white text-black placeholder-gray-600"
-            />
-
+            <div className="grid gap-5 sm:grid-cols-2">
+              <label className="block">
+                <span className="mb-1.5 block font-mono text-xs uppercase tracking-wider text-paper/50">Name</span>
+                <input
+                  type="text"
+                  name="name"
+                  required
+                  maxLength={50}
+                  placeholder="Your name"
+                  className="w-full border border-line bg-coal px-4 py-3 text-paper placeholder:text-paper/30 focus:border-amber"
+                />
+              </label>
+              <label className="block">
+                <span className="mb-1.5 block font-mono text-xs uppercase tracking-wider text-paper/50">Phone</span>
+                <input
+                  type="tel"
+                  name="phone"
+                  required
+                  placeholder="10-digit number"
+                  className="w-full border border-line bg-coal px-4 py-3 text-paper placeholder:text-paper/30 focus:border-amber"
+                />
+              </label>
+            </div>
+            <label className="mt-5 block">
+              <span className="mb-1.5 block font-mono text-xs uppercase tracking-wider text-paper/50">Email</span>
+              <input
+                type="email"
+                name="email"
+                required
+                maxLength={100}
+                placeholder="you@example.com"
+                className="w-full border border-line bg-coal px-4 py-3 text-paper placeholder:text-paper/30 focus:border-amber"
+              />
+            </label>
+            <label className="mt-5 block">
+              <span className="mb-1.5 block font-mono text-xs uppercase tracking-wider text-paper/50">What do you need?</span>
+              <textarea
+                name="message"
+                required
+                maxLength={1000}
+                rows={5}
+                placeholder="e.g. MCC panel for a 12-motor line, or automation for a 3BHK"
+                className="w-full border border-line bg-coal px-4 py-3 text-paper placeholder:text-paper/30 focus:border-amber"
+              />
+            </label>
             <button
               type="submit"
-              className="bg-black text-white font-semibold px-6 py-3 rounded-full hover:bg-white hover:text-black border-2 border-black transition-all shadow-md hover:shadow-xl"
+              className="mt-6 w-full bg-amber px-6 py-4 font-display text-lg uppercase tracking-wide text-coal transition-colors hover:bg-amber-deep"
             >
-              Send Message
+              Send enquiry
             </button>
           </form>
         </div>
